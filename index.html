@@ -4,44 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nimbus CRM — Manage every customer relationship in one place</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
-    <div class="brand">
-      <img src="images/logo.svg" alt="Nimbus CRM logo" width="36" height="36">
-      <span>Nimbus CRM</span>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.svg" alt="Nimbus CRM logo" width="36" height="36">
+        <span>Nimbus CRM<span class="dot">.</span></span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#contact">Contact sales</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#customers">Customers</a></li>
-        <li><a href="#contact">Contact sales</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
 
     <section class="hero">
-      <div class="wrap">
-        <div class="hero-copy">
-          <h1>Manage every customer relationship in one place</h1>
-          <p>Nimbus CRM brings your contacts, deals, and conversations together so your team always knows what to do next.</p>
-          <a href="#pricing" class="btn">Get started</a>
-        </div>
-        <div class="hero-image">
-          <img src="images/hero-dashboard.svg" alt="Illustration of a sales dashboard with a contact list, a revenue line chart, a completion ring, and a bar chart">
-        </div>
+      <div class="container hero-content">
+        <h1>Manage every customer relationship in one place</h1>
+        <p class="hero-subhead">Nimbus CRM brings your contacts, deals, and conversations together so your team always knows what to do next.</p>
+        <a href="#pricing" class="btn btn-dark">Get started</a>
+        <a href="#features" class="btn btn-outline">See features</a>
       </div>
     </section>
 
     <section id="features" class="features">
-      <div class="wrap">
-        <h2>Everything your sales team needs</h2>
-        <p class="section-intro">Nimbus brings the tools scattered across spreadsheets, inboxes, and sticky notes into a single workspace.</p>
-        <div class="feature-grid">
+      <div class="container">
+        <h2 class="section-title">Everything your sales team needs</h2>
+        <p class="section-lede">Nimbus brings the tools scattered across spreadsheets, inboxes, and sticky notes into a single workspace.</p>
+        <div class="features-grid">
           <article class="feature">
             <img src="images/icon-contacts.svg" alt="" width="48" height="48">
             <h3>Contact management</h3>
@@ -62,52 +61,68 @@
     </section>
 
     <section id="pricing" class="featured">
-      <div class="wrap">
-        <div class="featured-image">
+      <div class="container">
+        <h2 class="section-title">See your whole pipeline at a glance</h2>
+        <p class="section-lede">The Nimbus dashboard pulls contacts, deal stages, and revenue trends into one screen, so reps stop switching tabs and start closing deals. Custom views let each rep filter by territory, deal stage, or priority without touching a spreadsheet.</p>
+        <div class="media">
           <img src="images/screenshot-dashboard.svg" alt="Screenshot of the Nimbus CRM dashboard showing a contact sidebar, a chart panel, and a recent activity feed">
-        </div>
-        <div class="featured-copy">
-          <h2>See your whole pipeline at a glance</h2>
-          <p>The Nimbus dashboard pulls contacts, deal stages, and revenue trends into one screen, so reps stop switching tabs and start closing deals.</p>
-          <p>Custom views let each rep filter by territory, deal stage, or priority without touching a spreadsheet.</p>
         </div>
       </div>
     </section>
 
     <section id="customers" class="secondary">
-      <h2>Why teams choose Nimbus</h2>
-      <div class="wrap secondary-grid">
-        <article class="secondary-block">
-          <img src="images/team-collaboration.svg" alt="Illustration of three team members connected around a shared workspace">
-          <h3>Built for growing teams</h3>
-          <p>Assign leads, share notes, and hand off deals without losing context, whether your team has three people or three hundred.</p>
-        </article>
-        <article class="secondary-block">
-          <img src="images/integrations.svg" alt="Illustration of four connected apps linked to a central hub, representing Nimbus integrations">
-          <h3>Connects with the tools you already use</h3>
-          <p>Sync contacts and calendar events with the email, scheduling, and support tools your team already relies on.</p>
-        </article>
+      <div class="container">
+        <h2 class="section-title">Why teams choose Nimbus</h2>
+        <div class="secondary-grid">
+          <article class="card">
+            <div class="card-text">
+              <h3>Built for growing teams</h3>
+              <p>Assign leads, share notes, and hand off deals without losing context, whether your team has three people or three hundred.</p>
+              <a href="#contact" class="btn btn-outline">Learn more</a>
+            </div>
+            <div class="card-image img-a" role="img" aria-label="Illustration of three team members connected around a shared workspace"></div>
+          </article>
+          <article class="card">
+            <div class="card-text">
+              <h3>Connects with the tools you already use</h3>
+              <p>Sync contacts and calendar events with the email, scheduling, and support tools your team already relies on.</p>
+              <a href="#contact" class="btn btn-outline">Learn more</a>
+            </div>
+            <div class="card-image img-b" role="img" aria-label="Illustration of four connected apps linked to a central hub, representing Nimbus integrations"></div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="cta">
-      <div class="wrap">
-        <h2>Heard enough?</h2>
-        <p>Start a free 14-day trial. No credit card required.</p>
-        <a href="#pricing" class="btn">Start your free trial</a>
+      <div class="container cta-inner">
+        <h2 class="section-title">Heard enough?</h2>
+        <p class="section-lede">Start a free 14-day trial. No credit card required.</p>
+        <a href="#pricing" class="btn btn-dark">Start your free trial</a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <ul class="footer-links">
-      <li><a href="#pricing">Pricing plans</a></li>
-      <li><a href="#contact">Contact sales</a></li>
-      <li><a href="#">Privacy policy</a></li>
-      <li><a href="#">Terms of service</a></li>
-    </ul>
-    <p>&copy; 2026 Nimbus CRM. All rights reserved.</p>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p><strong>Nimbus CRM</strong> helps sales teams manage every customer relationship in one place. Questions? <a href="#contact">Contact sales</a>.</p>
+        <p>&copy; 2026 Nimbus CRM. All rights reserved.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#pricing">Pricing plans</a>
+          <a href="#contact">Contact sales</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms of service</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
